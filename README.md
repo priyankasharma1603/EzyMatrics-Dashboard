@@ -5,6 +5,9 @@
 
 Welcome to **EzyMetrics Dashboard**, a streamlined dashboard interface to manage leads, analytics, and reports. This project is built using **React** and **React Router** to offer an intuitive user experience.
 
+
+LIVE: https://ezy-matrics-dashboard.vercel.app/
+
 ## Features ✨
 
 - **Dashboard Overview** 📈: Visualize your metrics in one place.

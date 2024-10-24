@@ -1,0 +1,71 @@
+.charts-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* For responsiveness on smaller screens */
+  padding: 5px;
+  gap: 20px;
+}
+
+.chart {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(45% - 20px); /* Adjust width to accommodate gap */
+  min-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover */
+}
+
+.chart:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.pie-chart-container canvas {
+  max-width: 500px; /* Adjusted size for pie chart */
+  max-height: 320px;
+  margin: 0 auto;
+}
+
+.bar-chart-container canvas {
+  max-width: 500px; /* Adjusted size for bar chart */
+  max-height: 320px;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333; /* Darker text color for better readability */
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+h3:hover {
+  color: #4e8cff; /* Change color on hover */
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .charts-container {
+    flex-direction: column; /* Stack charts vertically */
+    align-items: center; /* Center align charts */
+  }
+
+  .chart {
+    width: 90%; /* Full width on smaller screens */
+    max-width: 600px; /* Limit max width for readability */
+  }
+
+  .pie-chart-container canvas,
+  .bar-chart-container canvas {
+    max-width: 100%; /* Full width for charts on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

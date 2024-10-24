@@ -1,0 +1,99 @@
+/* Lead Management Styles */
+.lead-management {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.529);
+    border-radius: 12px;
+    margin: 20px 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .lead-management h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a4a68;
+    font-size: 24px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4949ff;
+    color: white;
+    font-weight: 500;
+    
+  }
+  
+  td {
+    color: #4a4a68;
+  }
+  
+  .table-row {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .table-row:hover {
+    background-color: #f0f0ff;
+    transform: scale(1.02);
+  }
+  
+  /* Status colors */
+  .status {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status.completed {
+    color: #28a745;
+  }
+  
+  .status.pending {
+    color: #ffc107;
+  }
+  
+  .status.due {
+    color: #dc3545;
+  }
+  
+  .status-icon {
+    margin-right: 8px;
+  }
+  
+  /* Animation for table fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive table */
+  @media (max-width: 768px) {
+    th, td {
+      padding: 10px;
+    }
+  
+    .lead-management h3 {
+      font-size: 20px;
+    }
+  }
+  
